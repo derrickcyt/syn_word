@@ -33,7 +33,7 @@ public class Search {
 				System.out.println("=======");
 			}
 		}else{
-			System.out.println("没有这个词");
+			System.out.println("没有这个词!");
 		}
 		
 
