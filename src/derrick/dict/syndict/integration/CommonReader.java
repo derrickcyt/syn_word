@@ -26,16 +26,7 @@ public class CommonReader extends DictReader {
 		System.out.println(SynDict.str2vec.size());
 		System.out.println(SynDict.synDict.size());
 
-		List<String> outputdata = new ArrayList<>();
-		for (SynItem si : SynDict.synDict) {
-			StringBuilder sb=new StringBuilder();
-			for(String word:si.getWordList()){
-				sb.append(word+" ");
-			}
-			outputdata.add(sb.toString().trim());
-		}
-		
-		TextWriter.write(outputdata, "output/syndict.txt", "GBK");
+		SynDict.writeSyn(SynDict.synDictPath);
 	}
 
 }
